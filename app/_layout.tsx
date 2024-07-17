@@ -34,7 +34,7 @@ export default function RootLayout() {
           name='(tabs)'
           options={{ headerShown: false }}
         />
-        <Stack.Screen name='not-found' />
+        <Stack.Screen name='+not-found' />
       </Stack>
     </ThemeProvider>
   )
