@@ -1,5 +1,5 @@
-import { ThemedText } from '@/src/components/common/CustomText'
+import { ThemedText } from '@/src/components/common/CustomText';
 
 export default function HomeScreen() {
-  return <ThemedText type='title'>Welcome to Expo</ThemedText>
+  return <ThemedText type='title'>Welcome to Expo</ThemedText>;
 }

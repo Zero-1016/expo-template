@@ -5,7 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   plugins: ['prettier', '@typescript-eslint', 'unused-imports', 'simple-import-sort'],
   rules: {
@@ -20,19 +20,19 @@ module.exports = {
       'error',
       {
         selector: 'variable',
-        format: ['camelCase', 'UPPER_CASE']
+        format: ['camelCase', 'UPPER_CASE'],
       },
       {
         selector: 'function',
-        format: ['camelCase', 'PascalCase']
+        format: ['camelCase', 'PascalCase'],
       },
       {
         selector: 'typeLike',
-        format: ['PascalCase']
-      }
+        format: ['PascalCase'],
+      },
     ],
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': 'error',
-    'react/react-in-jsx-scope': 'off'
-  }
-}
+    'react/react-in-jsx-scope': 'off',
+  },
+};

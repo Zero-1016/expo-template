@@ -4,11 +4,11 @@
   "bracketSpacing": true,
   "endOfLine": "lf",
   "printWidth": 100,
-  "semi": false,
+  "semi": true,
   "singleAttributePerLine": true,
   "singleQuote": true,
   "jsxSingleQuote": true,
   "tabWidth": 2,
-  "trailingComma": "none",
+  "trailingComma": "es5",
   "useTabs": false
 }

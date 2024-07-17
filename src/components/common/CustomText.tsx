@@ -1,18 +1,18 @@
-import styled from '@emotion/native'
-import { css } from '@emotion/react'
-import type { PropsWithChildren } from 'react'
-import { Text as RNText, type TextProps } from 'react-native'
-import { match } from 'ts-pattern'
+import styled from '@emotion/native';
+import { css } from '@emotion/react';
+import type { PropsWithChildren } from 'react';
+import { Text as RNText, type TextProps } from 'react-native';
+import { match } from 'ts-pattern';
 
 export type ThemedTextProps = TextProps & {
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link'
-}
+  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+};
 
 const E = {
   Text: styled(RNText)<{ $customStyle: string }>`
     ${({ $customStyle }) => $customStyle};
-  `
-}
+  `,
+};
 
 export function ThemedText({
   children,
@@ -24,9 +24,9 @@ export function ThemedText({
     .with('defaultSemiBold', () => CSS.DefaultSemiBold)
     .with('subtitle', () => CSS.Subtitle)
     .with('link', () => CSS.Link)
-    .otherwise(() => CSS.Default)
+    .otherwise(() => CSS.Default);
 
-  const customStyle = textStyle.styles
+  const customStyle = textStyle.styles;
 
   return (
     <E.Text
@@ -34,7 +34,7 @@ export function ThemedText({
       {...rest}>
       {children}
     </E.Text>
-  )
+  );
 }
 
 const CSS = {
@@ -59,5 +59,5 @@ const CSS = {
     font-weight: normal;
     color: blue;
     text-decoration: underline;
-  `
-}
+  `,
+};

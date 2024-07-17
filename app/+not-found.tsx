@@ -1,7 +1,7 @@
-import styled from '@emotion/native'
-import { Link, Stack } from 'expo-router'
+import styled from '@emotion/native';
+import { Link, Stack } from 'expo-router';
 
-import { ThemedText } from '@/src/components/common'
+import { ThemedText } from '@/src/components/common';
 
 export default function NotFoundScreen() {
   return (
@@ -14,7 +14,7 @@ export default function NotFoundScreen() {
         </E.Link>
       </E.Container>
     </>
-  )
+  );
 }
 
 const E = {
@@ -27,5 +27,5 @@ const E = {
   Link: styled(Link)`
     margin-top: 15px;
     padding: 15px 0;
-  `
-}
+  `,
+};

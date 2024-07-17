@@ -1,18 +1,18 @@
-import { Tabs } from 'expo-router'
-import React from 'react'
+import { Tabs } from 'expo-router';
+import React from 'react';
 
-import { TabBarIcon } from '@/src/components/common/TabBarIcon'
-import { colors } from '@/src/constants/colors'
-import { useColorScheme } from '@/src/hooks/useColorScheme'
+import { TabBarIcon } from '@/src/components/common/TabBarIcon';
+import { colors } from '@/src/constants/colors';
+import { useColorScheme } from '@/src/hooks/useColorScheme';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme()
+  const colorScheme = useColorScheme();
 
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: colors[colorScheme ?? 'light'].tint,
-        headerShown: false
+        headerShown: false,
       }}>
       <Tabs.Screen
         name='index'
@@ -23,7 +23,7 @@ export default function TabLayout() {
               name={focused ? 'home' : 'home-outline'}
               color={color}
             />
-          )
+          ),
         }}
       />
       <Tabs.Screen
@@ -35,9 +35,9 @@ export default function TabLayout() {
               name={focused ? 'code-slash' : 'code-slash-outline'}
               color={color}
             />
-          )
+          ),
         }}
       />
     </Tabs>
-  )
+  );
 }
