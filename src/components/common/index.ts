@@ -1,2 +1,2 @@
-export { ThemedText } from './CustomText';
 export { TabBarIcon } from './TabBarIcon';
+export { ThemedText } from './Text/CustomText';

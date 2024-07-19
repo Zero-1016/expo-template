@@ -1,5 +1,5 @@
-import { ThemedText } from '@/src/components/common/CustomText';
+import { CustomText } from '@/src/components/common/Text/CustomText';
 
 export default function TabTwoScreen() {
-  return <ThemedText type='link'>Welcome to Expo</ThemedText>;
+  return <CustomText type='link'>Welcome to Expo</CustomText>;
 }

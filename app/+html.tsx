@@ -1,3 +1,5 @@
+import 'react-native-reanimated';
+
 import { ScrollViewStyleReset } from 'expo-router/html';
 import { type PropsWithChildren } from 'react';
 

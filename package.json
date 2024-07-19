@@ -11,7 +11,8 @@
     "lint": "expo lint",
     "postinstall": "husky",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "postpack": "pinst --enable",
+    "storybook": "storybook dev -p 6006"
   },
   "jest": {
     "preset": "jest-expo"
@@ -47,9 +48,21 @@
     "@babel/core": "^7.20.0",
     "@eslint/compat": "^1.1.1",
     "@eslint/js": "^9.7.0",
+    "@react-native-async-storage/async-storage": "1.24.0",
+    "@react-native-community/datetimepicker": "8.2.0",
+    "@react-native-community/slider": "4.5.2",
+    "@storybook/addon-actions": "^7.6.18",
+    "@storybook/addon-controls": "^7.6.18",
+    "@storybook/addon-essentials": "^7.6.18",
+    "@storybook/addon-links": "^7.6.18",
+    "@storybook/addon-react-native-web": "^0.0.23",
+    "@storybook/react": "^7.6.18",
+    "@storybook/react-native": "^7.6.18",
+    "@storybook/react-webpack5": "^7.6.18",
     "@types/jest": "^29.5.12",
     "@types/react": "~18.2.45",
     "@types/react-test-renderer": "^18.0.7",
+    "babel-loader": "8.3.0",
     "eslint": "^8.57.0",
     "eslint-config-expo": "^7.0.0",
     "eslint-config-prettier": "^9.1.0",
@@ -62,6 +75,7 @@
     "prettier": "^3.3.3",
     "pretty-quick": "^4.0.0",
     "react-test-renderer": "18.2.0",
+    "storybook": "^7.6.18",
     "typescript": "~5.3.3",
     "typescript-eslint": "^7.16.1"
   },

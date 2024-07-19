@@ -14,7 +14,7 @@ const E = {
   `,
 };
 
-export function ThemedText({
+export function CustomText({
   children,
   type = 'default',
   ...rest
