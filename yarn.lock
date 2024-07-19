@@ -7725,6 +7725,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chromatic@npm:^11.5.5":
+  version: 11.5.5
+  resolution: "chromatic@npm:11.5.5"
+  peerDependencies:
+    "@chromatic-com/cypress": ^0.*.* || ^1.0.0
+    "@chromatic-com/playwright": ^0.*.* || ^1.0.0
+  peerDependenciesMeta:
+    "@chromatic-com/cypress":
+      optional: true
+    "@chromatic-com/playwright":
+      optional: true
+  bin:
+    chroma: dist/bin.js
+    chromatic: dist/bin.js
+    chromatic-cli: dist/bin.js
+  checksum: 10c0/3d812122548f9c29ab7116f7054e03cbf523b30ddde7e3142017cd23c42b6b99b3023e0146ef3afcfe4245a8cbb2ed97cedecca4e2cf9e5f6e8666db84a827d4
+  languageName: node
+  linkType: hard
+
 "chrome-launcher@npm:^0.15.2":
   version: 0.15.2
   resolution: "chrome-launcher@npm:0.15.2"
@@ -9969,6 +9988,7 @@ __metadata:
     "@types/react": "npm:~18.2.45"
     "@types/react-test-renderer": "npm:^18.0.7"
     babel-loader: "npm:8.3.0"
+    chromatic: "npm:^11.5.5"
     eslint: "npm:^8.57.0"
     eslint-config-expo: "npm:^7.0.0"
     eslint-config-prettier: "npm:^9.1.0"

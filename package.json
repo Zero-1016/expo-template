@@ -12,7 +12,8 @@
     "postinstall": "husky",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "jest": {
     "preset": "jest-expo"
@@ -22,6 +23,7 @@
     "@emotion/react": "^11.11.4",
     "@expo/vector-icons": "^14.0.2",
     "@react-navigation/native": "^6.0.2",
+    "chromatic": "^11.5.5",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-unused-imports": "^4.0.0",
     "expo": "~51.0.21",
